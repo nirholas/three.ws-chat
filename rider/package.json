@@ -304,7 +304,9 @@
     "growl@<1.10.0": "^1.10.0",
     "aframe": {
       "debug": "^2.6.9"
-    }
+    },
+    "undici@<6.29.1": "^6.29.1",
+    "fast-xml-parser@<5.7.0": "^5.7.0"
   },
   "devDependencies": {
     "cross-env": "4.0.0",
