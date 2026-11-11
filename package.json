@@ -99,7 +99,9 @@
 		"@babel/plugin-transform-modules-systemjs@>=7.12.0 <=7.29.3": "^7.29.4",
 		"fast-xml-builder@<=1.1.6": "^1.1.7",
 		"fast-xml-parser@<5.7.0": "^5.7.0",
-		"minimatch@>=7.0.0 <11.0.1": "^11.0.1"
+		"minimatch@>=7.0.0 <11.0.1": "^11.0.1",
+		"bigint-buffer": "$bigint-buffer",
+		"deepmerge": "$deepmerge"
 	},
 	"engines": {
 		"node": "24.x"
@@ -216,6 +218,8 @@
 		"vite-plugin-pwa": "^1.2.0",
 		"vitest": "^4.1.11",
 		"workbox-build": "^7.4.0",
-		"workbox-window": "^7.4.0"
+		"workbox-window": "^7.4.0",
+		"bigint-buffer": "file:vendor/bigint-buffer",
+		"deepmerge": "file:vendor/deepmerge"
 	}
 }

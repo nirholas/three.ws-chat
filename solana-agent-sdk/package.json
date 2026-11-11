@@ -61,7 +61,9 @@
     "ts-jest": "^29.4.9",
     "tsup": "^8.3.5",
     "typescript": "^5.7.3",
-    "zod": "^3.0.0"
+    "zod": "^3.0.0",
+    "bigint-buffer": "file:vendor/bigint-buffer",
+    "deepmerge": "file:vendor/deepmerge"
   },
   "publishConfig": {
     "access": "public"
@@ -73,6 +75,8 @@
     "stream-json@<=3.4.0": "^3.6.0",
     "esbuild@>=0.27.3 <0.28.1": "^0.28.1",
     "uuid@<11.1.1": "^11.1.1",
-    "minimatch@>=7.0.0 <11.0.1": "^11.0.1"
+    "minimatch@>=7.0.0 <11.0.1": "^11.0.1",
+    "bigint-buffer": "$bigint-buffer",
+    "deepmerge": "$deepmerge"
   }
 }
