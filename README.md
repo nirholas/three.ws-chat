@@ -1339,7 +1339,7 @@ For a traditional server deployment:
 > - `/first-meet/` loads `/dist-lib/agent-3d.js`. `npm run build:lib` writes that bundle to `dist-lib/` (outside `dist/`), and `npm run publish:lib` mirrors it to `dist/dist-lib/` as well as to the versioned `dist/agent-3d/<version>/` copies. Run both, then `npm run check:dist` to confirm.
 > - `/chat/` loads `/chat/assets/*`, produced by `npm run build:chat` (it runs `npm ci` inside `chat/` and writes `public/chat/assets/`, which is gitignored because it is generated).
 >
-> `npm run build:all` runs the whole chain (`build:chat` → `build` → `build:rider` → `build:lib` → `publish:lib`). Order matters: `build` empties `dist/`, so everything that writes into `dist/` must run after it. `build:rider` only copies the pre-built `rider/build`, `rider/assets`, and `rider/vendor` directories, which are tracked in the repo.
+> `npm run build:all` runs the whole chain (`build:chat` → `build` → `build:rider` → `build:lib` → `publish:lib`). Order matters: `build` empties `dist/`, so everything that writes into `dist/` must run after it. `build:rider` only copies the pre-built `rider/build`, `rider/assets`, and `rider/vendor` directories, which are tracked in the repo, plus `rider/LICENSE` and `rider/NOTICE.md` so the deployed copy keeps Moon Rider's MIT notice.
 
 3. Run `api/` endpoints via Node.js (wrap with Express or use the Vercel dev adapter)
 4. Connect to Postgres (Neon or self-hosted)
