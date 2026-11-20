@@ -58206,7 +58206,7 @@ function updateAttribute (attrib, data, itemSize, dtype) {
           'To avoid memory leaks, it is recommended that you dispose ',
           'your geometries and create new ones, or update to ThreeJS r82 or newer.\n',
           'See here for discussion:\n',
-          'https://github.com/nirholas/three.ws/pull/9631'
+          'https://github.com/mrdoob/three.js/pull/9631'
         ].join(''))
       }
 
@@ -68585,7 +68585,7 @@ module.exports.Component = registerComponent('text', {
 
 /**
  * Due to using negative scale, we return the opposite side specified.
- * https://github.com/nirholas/three.ws/pull/12787/
+ * https://github.com/mrdoob/three.js/pull/12787/
  */
 function parseSide (side) {
   switch (side) {
@@ -75870,7 +75870,7 @@ _dereq_('./extras/components/');
 _dereq_('./extras/primitives/');
 
 console.log('A-Frame Version: 0.9.2 (Date 2019-05-30, Commit #154f7d07)');
-console.log('three Version (https://github.com/nirholas/three.ws):',
+console.log('three Version (https://github.com/supermedium/three.js):',
             pkg.dependencies['super-three']);
 console.log('WebVR Polyfill Version:', pkg.dependencies['webvr-polyfill']);
 
